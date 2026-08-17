@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ElectroHub - Electronics</title>
+
+<style>
+
+/* Universal Selector */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* Body */
+body{
+font-family:Verdana,sans-serif;
+background:#edf4fb;
+color:#222;
+}
+
+/* Grouping Selector */
+h1,h2,h3{
+font-family:"Courier New",monospace;
+text-align:center;
+color:#ff6600;
+text-shadow:2px 2px 4px gray;
+margin:20px;
+}
+
+/* Header */
+header{
+background:#002b5b;
+color:white;
+padding:20px;
+text-align:center;
+border-bottom:5px solid orange;
+}
+
+/* Navigation */
+nav{
+background:#004080;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:18px;
+margin:20px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:orange;
+}
+
+/* Banner */
+.banner{
+height:250px;
+background-image:url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200");
+background-size:cover;
+background-position:center;
+margin-bottom:25px;
+border-bottom:5px solid orange;
+}
+
+/* Product Layout */
+.container{
+display:flex;
+flex-wrap:wrap;
+justify-content:space-evenly;
+padding:20px;
+}
+
+/* Box Model */
+.product{
+width:270px;
+background:white;
+margin:20px;
+padding:20px;
+border:3px solid #002b5b;
+border-radius:10px;
+text-align:center;
+}
+
+/* Images */
+.product img{
+width:180px;
+height:180px;
+border:3px solid orange;
+border-radius:8px;
+transition:0.5s;
+}
+
+/* Hover Effect */
+.product img:hover{
+transform:scale(1.1);
+border-color:#002b5b;
+}
+
+h3:hover{
+color:#002b5b;
+}
+
+.price{
+color:green;
+font-size:22px;
+font-weight:bold;
+margin:10px;
+}
+
+button{
+background:#002b5b;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:orange;
+color:#002b5b;
+}
+
+/* Offer Section */
+.offer{
+background:#fff4e6;
+margin:30px;
+padding:20px;
+border:2px dashed orange;
+}
+
+.offer ul{
+margin-left:40px;
+line-height:35px;
+font-size:18px;
+}
+
+/* Footer */
+footer{
+background:#002b5b;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+border-top:5px solid orange;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>ElectroHub Electronics Store</h1>
+
+<p>Latest Gadgets at Best Prices</p>
+
+</header>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="electronics.html">Electronics</a>
+
+<a href="login.html">Login</a>
+
+<a href="register.html">Register</a>
+
+</nav>
+
+<div class="banner"></div>
+
+<h2>Electronic Products</h2>
+
+<div class="container">
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=300" alt="Phone">
+
+<h3>5G Smartphone</h3>
+
+<p class="price">₹24,999</p>
+
+<button>Buy Now</button>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300" alt="Laptop">
+
+<h3>Gaming Laptop</h3>
+
+<p class="price">₹72,999</p>
+
+<button>Buy Now</button>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=300" alt="Watch">
+
+<h3>Smart Watch</h3>
+
+<p class="price">₹5,999</p>
+
+<button>Buy Now</button>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300" alt="Headset">
+
+<h3>Bluetooth Headset</h3>
+
+<p class="price">₹2,499</p>
+
+<button>Buy Now</button>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=300" alt="Camera">
+
+<h3>DSLR Camera</h3>
+
+<p class="price">₹48,999</p>
+
+<button>Buy Now</button>
+
+</div>
+
+<div class="product">
+
+<img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=300" alt="Speaker">
+
+<h3>Bluetooth Speaker</h3>
+
+<p class="price">₹3,999</p>
+
+<button>Buy Now</button>
+
+</div>
+
+</div>
+
+<div class="offer">
+
+<h2>Festival Offers</h2>
+
+<ul>
+<li>30% OFF on Laptops</li>
+<li>Free Wireless Mouse with Desktop PCs</li>
+<li>Extra 10% Cashback on Credit Cards</li>
+<li>Free Home Delivery Across India</li>
+<li>2-Year Warranty on Selected Products</li>
+</ul>
+
+</div>
+
+<footer>
+
+<h2>ElectroHub</h2>
+
+<p>Email: electrohub@gmail.com</p>
+
+<p>Phone: +91 9876543210</p>
+
+<p>&copy; 2026 ElectroHub. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

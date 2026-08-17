@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Career Registration Form</title>
+
+    <style>
+        body{
+            font-family: Verdana, sans-serif;
+            background-color:#e8f8e8;
+        }
+
+        .box{
+            width:450px;
+            margin:auto;
+            margin-top:20px;
+            background:white;
+            border:1px solid black;
+            padding:20px;
+        }
+
+        h2{
+            text-align:center;
+            color:darkgreen;
+        }
+
+        table{
+            width:100%;
+        }
+
+        td{
+            padding:8px;
+        }
+
+        input,select,textarea{
+            width:100%;
+            padding:5px;
+        }
+
+        input[type=radio]{
+            width:auto;
+        }
+
+        input[type=submit],
+        input[type=reset]{
+            width:90px;
+            padding:8px;
+        }
+
+        .btn{
+            text-align:center;
+        }
+    </style>
+
+<script>
+
+function validate()
+{
+
+var cname=document.getElementById("cname").value.trim();
+var age=document.getElementById("age").value;
+var email=document.getElementById("email").value.trim();
+var city=document.getElementById("city").value.trim();
+var password=document.getElementById("password").value;
+var resume=document.getElementById("resume").value;
+
+cname=cname.toLowerCase();
+document.getElementById("cname").value=cname;
+
+if(cname=="")
+{
+alert("Enter Candidate Name");
+return false;
+}
+
+if(age=="")
+{
+alert("Enter Age");
+return false;
+}
+
+if(age<18)
+{
+alert("Minimum Age is 18");
+return false;
+}
+
+if(email=="")
+{
+alert("Enter Email");
+return false;
+}
+
+if(city.length<3)
+{
+alert("Enter Valid City Name");
+return false;
+}
+
+if(password.length<6)
+{
+alert("Password should contain minimum 6 characters");
+return false;
+}
+
+if(resume=="")
+{
+alert("Please Upload Resume");
+return false;
+}
+
+confirm("Do you want to submit the form?");
+
+alert("Registration Completed Successfully");
+
+return true;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>CAREER REGISTRATION FORM</h2>
+
+<form onsubmit="return validate()">
+
+<table>
+
+<tr>
+<td>Candidate Name</td>
+<td><input type="text" id="cname"></td>
+</tr>
+
+<tr>
+<td>Age</td>
+<td><input type="number" id="age"></td>
+</tr>
+
+<tr>
+<td>Email ID</td>
+<td><input type="email" id="email"></td>
+</tr>
+
+<tr>
+<td>City</td>
+<td><input type="text" id="city"></td>
+</tr>
+
+<tr>
+<td>Password</td>
+<td><input type="password" id="password"></td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td>
+<input type="radio" name="gender">Male
+<input type="radio" name="gender">Female
+</td>
+</tr>
+
+<tr>
+<td>Course</td>
+<td>
+<select>
+<option>Select</option>
+<option>B.Sc</option>
+<option>BCA</option>
+<option>B.E</option>
+<option>B.Tech</option>
+<option>MCA</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Preferred Company</td>
+<td>
+<select>
+<option>TCS</option>
+<option>Infosys</option>
+<option>Wipro</option>
+<option>Zoho</option>
+<option>HCL</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Upload Resume</td>
+<td>
+<input type="file" id="resume" accept=".pdf,.doc,.docx">
+</td>
+</tr>
+
+<tr>
+<td>Career Objective</td>
+<td>
+<textarea rows="3"></textarea>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" class="btn">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</div>
+
+</body>
+</html>

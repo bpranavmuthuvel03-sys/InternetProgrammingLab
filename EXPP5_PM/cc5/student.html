@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Quick Quiz</h1>
+        <p>Student Information</p>
+    </div>
+
+    <div class="student-box">
+
+        <h2>Student Details</h2>
+
+        <form id="studentForm">
+
+            <label>Student Name</label>
+            <input
+                type="text"
+                id="studentName"
+                required
+            >
+
+            <label>Register Number</label>
+            <input
+                type="text"
+                id="registerNumber"
+                required
+            >
+
+            <label>Department</label>
+
+            <select id="department" required>
+
+                <option value="">
+                    Select Department
+                </option>
+
+                <option value="CSE">
+                    CSE
+                </option>
+
+                <option value="ECE">
+                    ECE
+                </option>
+
+                <option value="EEE">
+                    EEE
+                </option>
+
+                <option value="IT">
+                    IT
+                </option>
+
+                <option value="MECH">
+                    MECH
+                </option>
+
+            </select>
+
+            <label>Year</label>
+
+            <select id="year" required>
+
+                <option value="">
+                    Select Year
+                </option>
+
+                <option value="1st Year">
+                    1st Year
+                </option>
+
+                <option value="2nd Year">
+                    2nd Year
+                </option>
+
+                <option value="3rd Year">
+                    3rd Year
+                </option>
+
+                <option value="4th Year">
+                    4th Year
+                </option>
+
+            </select>
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="email"
+                required
+            >
+
+            <label>College Name</label>
+
+            <input
+                type="text"
+                id="college"
+                required
+            >
+
+            <div class="buttons">
+
+                <button type="submit">
+                    Continue to Exam
+                </button>
+
+                <button
+                    type="reset"
+                    class="clear"
+                >
+                    Clear
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="footer">
+        Please enter correct details
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

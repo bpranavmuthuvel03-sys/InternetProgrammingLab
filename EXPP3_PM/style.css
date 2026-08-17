@@ -1,0 +1,173 @@
+
+
+/* Universal Selector */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+body{
+    font-family:Verdana,sans-serif;
+    background:#eef4fa;
+    color:#222;
+}
+
+/* Grouping Selector */
+h1,h2,h3{
+    font-family:"Courier New",monospace;
+    color:#ff6600;
+    text-shadow:2px 2px 4px gray;
+}
+
+p,li{
+    font-size:18px;
+    line-height:30px;
+}
+
+/* Main Layout */
+.container{
+    display:flex;
+}
+
+/* Sidebar */
+.sidebar{
+    width:250px;
+    height:100vh;
+    position:fixed;
+    background:#002b5b;
+    color:white;
+    padding:25px;
+    border-right:5px solid orange;
+}
+
+.sidebar h1{
+    color:white;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin:20px 0;
+}
+
+.sidebar ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    display:block;
+    padding:12px;
+    border-radius:8px;
+}
+
+.sidebar ul li a:hover{
+    background:orange;
+    color:#002b5b;
+}
+
+/* Content Area */
+.content{
+    margin-left:270px;
+    width:100%;
+    padding:25px;
+}
+
+/* Banner */
+.banner{
+    height:320px;
+    background-image:url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200");
+    background-size:cover;
+    background-position:center;
+    border:4px solid #002b5b;
+    border-radius:10px;
+    text-align:center;
+    padding-top:100px;
+    margin-bottom:30px;
+}
+
+.banner h2{
+    color:white;
+    font-size:38px;
+}
+
+.banner p{
+    color:white;
+    font-size:20px;
+}
+
+/* Product Section */
+.products{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+/* Box Model */
+.box{
+    width:260px;
+    background:white;
+    margin:15px;
+    padding:20px;
+    border:3px solid #002b5b;
+    border-radius:12px;
+    text-align:center;
+}
+
+/* Images */
+.box img{
+    width:180px;
+    height:180px;
+    border:3px solid orange;
+    border-radius:10px;
+    transition:0.5s;
+}
+
+/* Image Hover */
+.box img:hover{
+    transform:rotate(5deg) scale(1.08);
+    border-color:#002b5b;
+}
+
+/* Heading Hover */
+h2:hover{
+    color:#002b5b;
+}
+
+/* Lists */
+ol{
+    margin:20px 40px;
+}
+
+ul{
+    margin:20px 40px;
+}
+
+/* Offers */
+.offers{
+    background:#fff4e6;
+    border:2px dashed orange;
+    padding:20px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+/* Footer */
+footer{
+    background:#002b5b;
+    color:white;
+    text-align:center;
+    padding:20px;
+    border-top:5px solid orange;
+    margin-top:40px;
+}
+
+footer p{
+    color:white;
+    margin:8px;
+}

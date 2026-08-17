@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f4ed;
+    color: #333;
+}
+
+
+/* HEADER */
+
+.header {
+    background-color: #5b4b8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header p {
+    margin: 8px;
+}
+
+
+/* WELCOME PAGE */
+
+.welcome {
+    width: 500px;
+    margin: 80px auto;
+    background-color: white;
+    padding: 35px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.welcome h2 {
+    color: #5b4b8a;
+}
+
+.welcome button {
+    margin-top: 20px;
+}
+
+
+/* STUDENT PAGE */
+
+.student-box {
+    width: 550px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #ccc;
+}
+
+.student-box h2 {
+    text-align: center;
+    color: #5b4b8a;
+}
+
+.student-box label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.student-box input,
+.student-box select {
+    width: 96%;
+    padding: 9px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+}
+
+
+/* EXAM */
+
+.student-display {
+    width: 850px;
+    margin: 25px auto;
+    background-color: white;
+    padding: 20px;
+    border-left: 5px solid #5b4b8a;
+}
+
+.student-display h2 {
+    color: #5b4b8a;
+}
+
+
+.exam-box {
+    width: 850px;
+    margin: auto;
+}
+
+.exam-box > h2 {
+    text-align: center;
+    color: #5b4b8a;
+}
+
+
+/* QUESTIONS */
+
+.question {
+    background-color: white;
+    margin: 18px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.question p {
+    line-height: 1.5;
+}
+
+.question label {
+    display: block;
+    padding: 7px;
+}
+
+.question label:hover {
+    background-color: #f0edf8;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    text-align: center;
+    margin: 30px;
+}
+
+button {
+    background-color: #5b4b8a;
+    color: white;
+    border: none;
+    padding: 11px 25px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #46396e;
+}
+
+button.clear {
+    background-color: #777;
+}
+
+
+/* RESULT */
+
+.result {
+    background-color: white;
+    border: 2px solid #5b4b8a;
+    padding: 20px;
+    margin: 30px 0;
+}
+
+.result h2 {
+    color: #5b4b8a;
+}
+
+.result p {
+    padding: 6px;
+    border-bottom: 1px solid #ddd;
+}
+
+.score {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5b4b8a;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #5b4b8a;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 900px) {
+
+    .exam-box,
+    .student-display {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .welcome,
+    .student-box {
+        width: 80%;
+    }
+
+}
