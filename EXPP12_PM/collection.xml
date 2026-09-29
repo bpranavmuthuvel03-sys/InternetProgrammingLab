@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<collection>
+
+    <volume id="B101">
+        <bookname>The Alchemist</bookname>
+        <writer>Paulo Coelho</writer>
+        <published>1988</published>
+        <language>English</language>
+        <cost>299</cost>
+    </volume>
+
+    <volume id="B102">
+        <bookname>Wings of Fire</bookname>
+        <writer>A. P. J. Abdul Kalam</writer>
+        <published>1999</published>
+        <language>English</language>
+        <cost>250</cost>
+    </volume>
+
+    <volume id="B103">
+        <bookname>Harry Potter</bookname>
+        <writer>J. K. Rowling</writer>
+        <published>1997</published>
+        <language>English</language>
+        <cost>450</cost>
+    </volume>
+
+    <volume id="B104">
+        <bookname>Ponniyin Selvan</bookname>
+        <writer>Kalki Krishnamurthy</writer>
+        <published>1955</published>
+        <language>Tamil</language>
+        <cost>520</cost>
+    </volume>
+
+    <volume id="B105">
+        <bookname>Atomic Habits</bookname>
+        <writer>James Clear</writer>
+        <published>2018</published>
+        <language>English</language>
+        <cost>399</cost>
+    </volume>
+
+    <volume id="B106">
+        <bookname>Rich Dad Poor Dad</bookname>
+        <writer>Robert Kiyosaki</writer>
+        <published>1997</published>
+        <language>English</language>
+        <cost>350</cost>
+    </volume>
+
+    <volume id="B107">
+        <bookname>The Guide</bookname>
+        <writer>R. K. Narayan</writer>
+        <published>1958</published>
+        <language>English</language>
+        <cost>275</cost>
+    </volume>
+
+    <volume id="B108">
+        <bookname>Silappathikaram</bookname>
+        <writer>Ilango Adigal</writer>
+        <published>1800</published>
+        <language>Tamil</language>
+        <cost>300</cost>
+    </volume>
+
+    <volume id="B109">
+        <bookname>Think and Grow Rich</bookname>
+        <writer>Napoleon Hill</writer>
+        <published>1937</published>
+        <language>English</language>
+        <cost>320</cost>
+    </volume>
+
+    <volume id="B110">
+        <bookname>The Secret</bookname>
+        <writer>Rhonda Byrne</writer>
+        <published>2006</published>
+        <language>English</language>
+        <cost>375</cost>
+    </volume>
+
+</collection>

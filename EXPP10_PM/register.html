@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #eef2f3;
+            padding: 40px;
+        }
+
+        .box {
+            width: 420px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 9px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h2>User Registration</h2>
+
+    <form action="check.php" method="post">
+
+        <label>User Name</label>
+        <input type="text" name="user_name" required>
+
+        <label>Password</label>
+        <input type="password" name="pwd" required>
+
+        <label>Email</label>
+        <input type="text" name="mail" required>
+
+        <label>Mobile Number</label>
+        <input type="text" name="contact" required>
+
+        <label>Credit Card Number</label>
+        <input type="text" name="card" required>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+</div>
+
+</body>
+</html>

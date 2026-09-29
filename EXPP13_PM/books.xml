@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<library>
+    <book>
+        <code>B501</code>
+        <title>Wings of Fire</title>
+        <author>A.P.J. Abdul Kalam</author>
+        <category>Biography</category>
+        <available>Yes</available>
+    </book>
+
+    <book>
+        <code>B502</code>
+        <title>The Alchemist</title>
+        <author>Paulo Coelho</author>
+        <category>Fiction</category>
+        <available>No</available>
+    </book>
+
+    <book>
+        <code>B503</code>
+        <title>Clean Code</title>
+        <author>Robert C. Martin</author>
+        <category>Programming</category>
+        <available>Yes</available>
+    </book>
+
+    <book>
+        <code>B504</code>
+        <title>Atomic Habits</title>
+        <author>James Clear</author>
+        <category>Self Help</category>
+        <available>Yes</available>
+    </book>
+
+    <book>
+        <code>B505</code>
+        <title>Rich Dad Poor Dad</title>
+        <author>Robert Kiyosaki</author>
+        <category>Finance</category>
+        <available>No</available>
+    </book>
+</library>

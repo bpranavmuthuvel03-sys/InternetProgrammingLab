@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Library Book Explorer</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            margin: 0;
+            background: #fff8e7;
+            color: #333;
+        }
+
+        .top {
+            background: #5d4037;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .top h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .main {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .control {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .control button {
+            padding: 13px 30px;
+            background: #8d6e63;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .control button:hover {
+            background: #4e342e;
+        }
+
+        #books {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .book {
+            background: white;
+            padding: 20px;
+            border-left: 6px solid #8d6e63;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+
+        .book h3 {
+            color: #5d4037;
+            margin-top: 0;
+        }
+
+        .book p {
+            margin: 8px 0;
+        }
+
+        .available {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 12px;
+            border-radius: 12px;
+            background: #dcedc8;
+            color: #33691e;
+        }
+
+        .unavailable {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 12px;
+            border-radius: 12px;
+            background: #ffcdd2;
+            color: #b71c1c;
+        }
+
+        #info {
+            text-align: center;
+            margin: 15px;
+            color: #795548;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="top">
+        <h1>My Digital Library</h1>
+        <p>Explore Books Using AJAX and XML</p>
+    </div>
+
+    <div class="main">
+
+        <div class="control">
+
+            <button onclick="showBooks()">
+                Load Library
+            </button>
+
+        </div>
+
+        <div id="info">
+            Library records are waiting to be loaded.
+        </div>
+
+        <div id="books"></div>
+
+    </div>
+
+
+    <script>
+
+        function showBooks() {
+
+            const ajax = new XMLHttpRequest();
+
+            ajax.open("GET", "books.xml", true);
+
+            ajax.onload = function() {
+
+                if (ajax.status === 200) {
+
+                    const documentXML = ajax.responseXML;
+
+                    const records =
+                        documentXML.getElementsByTagName("book");
+
+                    let cards = "";
+
+                    for (let index = 0; index < records.length; index++) {
+
+                        const book = records[index];
+
+                        const code =
+                            book.querySelector("code").textContent;
+
+                        const title =
+                            book.querySelector("title").textContent;
+
+                        const author =
+                            book.querySelector("author").textContent;
+
+                        const category =
+                            book.querySelector("category").textContent;
+
+                        const availability =
+                            book.querySelector("available").textContent;
+
+                        let statusClass;
+
+                        if (availability === "Yes") {
+                            statusClass = "available";
+                        } else {
+                            statusClass = "unavailable";
+                        }
+
+                        cards += `
+                            <div class="book">
+
+                                <h3>${title}</h3>
+
+                                <p>
+                                    <b>Book Code:</b> ${code}
+                                </p>
+
+                                <p>
+                                    <b>Author:</b> ${author}
+                                </p>
+
+                                <p>
+                                    <b>Category:</b> ${category}
+                                </p>
+
+                                <span class="${statusClass}">
+                                    ${availability === "Yes"
+                                    ? "Available"
+                                    : "Currently Borrowed"}
+                                </span>
+
+                            </div>
+                        `;
+                    }
+
+                    document.getElementById("books").innerHTML = cards;
+
+                    document.getElementById("info").innerHTML =
+                        records.length +
+                        " books retrieved successfully from XML.";
+
+                } else {
+
+                    document.getElementById("info").innerHTML =
+                        "Unable to load library information.";
+                }
+            };
+
+            ajax.onerror = function() {
+
+                document.getElementById("info").innerHTML =
+                    "Server connection error.";
+            };
+
+            ajax.send();
+        }
+
+    </script>
+
+</body>
+</html>
